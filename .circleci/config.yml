@@ -249,7 +249,7 @@ workflows:
           filters:
             branches:
               only:
-                - section-8.4
+                - master
       # - section_10_deploy_to_heroku:
       #     requires:
       #       - train_and_upload_regression_model
