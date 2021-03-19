@@ -120,11 +120,15 @@ workflows:
             - test_regression_model
             - test_ml_api
             - section_9_differential_tests
-
+          filters:
+            branches:
+              only:
+                - Section-10.5-Deploying-to-Heroku-via-CI     
+                
       - section_10_deploy_to_heroku:
           requires:
             - train_and_upload_regression_model
           filters:
             branches:
               only:
-                - master            
+                - Section-10.5-Deploying-to-Heroku-via-CI            
